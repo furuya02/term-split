@@ -8,6 +8,9 @@ A command-line tool to split iTerm2 windows and enable broadcast input to all pa
 
 `term_split` is a macOS CLI tool that splits your current iTerm2 terminal into multiple panes and enables broadcast input, allowing you to type commands that are sent to all panes simultaneously. This is useful for tasks like running the same commands on multiple servers or testing identical operations in parallel.
 
+
+![](images/001.png)
+
 ## Features
 
 - Split iTerm2 window into a specified number of panes
