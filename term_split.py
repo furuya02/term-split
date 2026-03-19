@@ -48,7 +48,7 @@ def split_panes(count: int, vertical: bool = True) -> None:
         tell current tab of current window
             repeat with s in sessions
                 tell s
-                    write text "cd {current_dir}"
+                    write text "cd '{current_dir}'"
                 end tell
             end repeat
         end tell
@@ -142,7 +142,7 @@ def main() -> None:
         direction = "垂直" if vertical else "水平"
         print(f"\n{direction}方向に{args.count}分割しました。")
         print("ブロードキャスト入力が有効です - 入力が全てのペインに送信されます。")
-        print("終了するには: Cmd + Shift + I")
+        print("モード変更: Option + Cmd + I")
 
     except RuntimeError as e:
         print(f"エラー: {e}", file=sys.stderr)
